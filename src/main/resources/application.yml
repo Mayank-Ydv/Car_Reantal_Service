@@ -1,0 +1,40 @@
+
+#	    level:
+#		      root: INFO
+#		         org.springframework.security: DEBUG
+#		         com.mayank.carrental: DEBUG
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/rentaldb
+    username: postgres
+    password: 6M3f+3TR}843
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+
+server:
+  port: 8080
+
+razorpay.key_secret: 3AbgR1eiC285kFpwmVg8I1Cl
+
+app:
+  jwt:
+    secret: change_this_to_a_long_secret_in_prod
+    expiration-minutes: 43200
+
+logging:
+  level:
+    root: INFO
+    org.springframework.security: DEBUG
+    com.mayank.carrental: DEBUG
+springdoc.swagger-ui.path: /swagger-ui
+springdoc.swagger-ui.display-operation-id: true
+springdoc.swagger-ui.display-request-duration: true
