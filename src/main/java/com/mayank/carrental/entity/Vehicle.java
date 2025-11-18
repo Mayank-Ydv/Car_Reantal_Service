@@ -20,6 +20,7 @@ public class Vehicle {
     @ManyToOne
     @JoinColumn(name = "branch_id")
     private Branch branch;
+    private Tyre tyre;
 
     @ManyToOne
     @JoinColumn(name = "vehicle_type_id")
